@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import axios from 'axios'
+import servicePath from '../config/apiUrl'
 import Head from 'next/head'
 import {Row, Col, List} from 'antd'
 import Link from 'next/link'
@@ -53,7 +54,7 @@ const Home = (list) => {
 
 Home.getInitialProps = () => {
   const promise = new Promise((resolve) => {
-    axios('http://127.0.0.1:7002/default/getArticleList')
+    axios(servicePath.getArticleList)
     .then(res => {
       console.log(res.data)
       resolve(res.data)

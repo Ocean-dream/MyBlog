@@ -1,5 +1,9 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Head from 'next/head'
+import axios from 'axios'
+import servicePath from '../config/apiUrl'
+// import Router from 'next/router'
+import Link from 'next/link'
 import {Row, Col, List, Breadcrumb} from 'antd'
 import Header from './../components/Header'
 import Author from './../components/Author'
@@ -57,5 +61,17 @@ const MyList = () => {
     </div>
   )
 }
+
+// MyList.getInitialProps = (context) => {
+//   let id = context.query.id
+//   const promise = new Promise(resolve => {
+//     axios(servicePath.getListById + id)
+//     .then(res => {
+//       console.log(res.data)
+//       // resolve(res.data.data[0])
+//     })
+//   })
+//   return promise
+// }
 
 export default MyList
