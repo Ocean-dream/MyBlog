@@ -8,8 +8,7 @@ import Header from './../components/Header'
 import Author from './../components/Author'
 import Advert from './../components/Addvert'
 import Footer from './../components/Footer'
-
-// import '../public/style/pages/index.css' 
+import '../public/style/pages/index.css' 
 import '../public/style/pages/common.css'
 
 import {CalendarOutlined, FolderOutlined, FireOutlined} from '@ant-design/icons'
@@ -56,7 +55,6 @@ Home.getInitialProps = () => {
   const promise = new Promise((resolve) => {
     axios(servicePath.getArticleList)
     .then(res => {
-      console.log(res.data)
       resolve(res.data)
     })
   })

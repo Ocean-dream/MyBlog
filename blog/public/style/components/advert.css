@@ -6,3 +6,134 @@
   margin-bottom: .2rem;
   overflow: hidden;
 }
+.comm-box{
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+.sky{
+  height: 100px;
+  background: skyblue;
+  text-align: center;
+  line-height: 100px;
+}
+.sky h3{
+  background-image: linear-gradient(135deg, deeppink, dodgerblue);
+  -webkit-background-clip:text;
+  color: transparent;
+
+}
+.f1 {
+  position: absolute;
+  bottom: 10px;
+  width: 154px;
+  height: 121px;
+  animation: move 0.5s steps(2) infinite, ren 18s linear infinite;
+}
+
+@keyframes move {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -318px 0;
+  }
+}
+
+@keyframes ren {
+  0% {
+      left: -308px;
+  }
+  100% {
+      left: 1920px;
+  }
+}
+
+.f2 {
+  position: absolute;
+  left: -334px;
+  bottom: 15px;
+  width: 167px;
+  height: 176px;
+  animation: fe 0.5s steps(2) infinite, feng 18s linear infinite;
+  animation-delay: 2s;
+}
+
+@keyframes fe {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -334px 0;
+  }
+}
+
+@keyframes feng {
+  0% {
+      left: -334px;
+  }
+  100% {
+      left: 1920px;
+      /* transform: translateX(-50%); */
+  }
+}
+
+.f3 {
+  position: absolute;
+  left: -322px;
+  bottom: 15px;
+  width: 161px;
+  height: 149px;
+  /* background: url(../../assets/7.png) no-repeat; */
+  animation: sh 0.5s steps(2) infinite, shou 18s linear infinite;
+  animation-delay: 4s;
+}
+
+@keyframes sh {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -322px 0;
+  }
+}
+
+@keyframes shou {
+  0% {
+      left: -322px;
+  }
+  100% {
+      left: 1920px;
+      /* transform: translateX(-50%); */
+  }
+}
+
+.f4 {
+  position: absolute;
+  left: -342px;
+  bottom: 15px;
+  width: 171px;
+  height: 157px;
+  /* background: url(../../assets/8.png) no-repeat; */
+  animation: de 0.5s steps(2) infinite, deng 18s linear infinite;
+  animation-delay: 6s;
+}
+
+@keyframes de {
+  0% {
+      background-position: 0 0;
+  }
+  100% {
+      background-position: -342px 0;
+  }
+}
+
+@keyframes deng {
+  0% {
+      left: -342px;
+  }
+  100% {
+      left: 1920px;
+      /* transform: translateX(-50%); */
+  }
+}

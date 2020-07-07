@@ -1,0 +1,75 @@
+import Vue from 'vue'
+import {
+  Button,
+  Row,
+  Col,
+  Card,
+  GoodsAction,
+  Tag,
+  Dialog,
+  stepper,
+  Switch,
+  Grid,
+  GridItem,
+  Overlay,
+  Loading,
+  RadioGroup,
+  Radio,
+  Toast,
+  DropdownMenu,
+  DropdownItem,
+  Picker,
+  TreeSelect,
+  GoodsActionButton,
+  Tabbar,
+  TabbarItem,
+  Pagination,
+  ActionSheet,
+  CellGroup,
+  SubmitBar,
+  Collapse,
+  CollapseItem,
+  Icon,
+  Cell,
+  Field,
+  Popup,
+  Lazyload,
+  GoodsActionIcon,
+  Search
+} from 'vant'
+Vue.use(Search)
+Vue.use(RadioGroup)
+Vue.use(Radio)
+Vue.use(TreeSelect)
+Vue.use(Switch)
+Vue.use(Field)
+Vue.use(Lazyload)
+Vue.use(Pagination)
+Vue.use(Cell)
+Vue.use(CellGroup)
+Vue.use(Button)
+Vue.use(GoodsAction)
+Vue.use(Card)
+Vue.use(Collapse)
+Vue.use(Tabbar)
+Vue.use(CollapseItem)
+Vue.use(TabbarItem)
+Vue.use(Grid)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
+Vue.use(Picker)
+Vue.use(ActionSheet)
+Vue.use(GridItem)
+Vue.use(Tag)
+Vue.use(Loading)
+Vue.use(Popup)
+Vue.use(SubmitBar)
+Vue.use(Overlay)
+Vue.use(stepper)
+Vue.use(Icon)
+Vue.use(Dialog)
+Vue.use(GoodsActionButton)
+Vue.use(GoodsActionIcon)
+Vue.use(Row).use(Col)
+
+Vue.prototype.$toast = Toast

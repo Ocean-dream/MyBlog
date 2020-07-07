@@ -10,10 +10,10 @@ import Footer from './../components/Footer'
 import marked from 'marked'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/monokai-sublime.css'
-import MarkNav from 'markdown-navbar'
-import 'markdown-navbar/dist/navbar.css'
+// import MarkNav from 'markdown-navbar'
+// import 'markdown-navbar/dist/navbar.css'
 import Tocify from './../components/tocify.tsx'
-import {CalendarOutlined, FolderOutlined, FireOutlined} from '@ant-design/icons'
+// import {CalendarOutlined, FolderOutlined, FireOutlined} from '@ant-design/icons'
 
 
 import '../public/style/pages/detail.css'
@@ -49,17 +49,17 @@ const Detailed = (props) =>{
           <div className="bread-div">
             <Breadcrumb>
               <Breadcrumb.Item><a href='/'>首页</a></Breadcrumb.Item>
-              <Breadcrumb.Item>视频教程</Breadcrumb.Item>
-              <Breadcrumb.Item>xxx</Breadcrumb.Item>
+              <Breadcrumb.Item>{props.typeName}</Breadcrumb.Item>
+              <Breadcrumb.Item>{props.title}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
           <div className="detailed-title">
-              今天中午吃点什么
+              {props.title}
           </div>
           <div className="list-icon center"> 
-            <span><CalendarOutlined /> 2019-06-18</span>
-            <span><FolderOutlined /> 视频教程</span>
-            <span><FireOutlined /> 5864</span>
+            <span><CalendarOutlined /> {props.addTime}</span>
+            <span><FolderOutlined /> {props.typeName}</span>
+            <span><FireOutlined /> {props.view_count}</span>
           </div>
           <div 
           className="detailed-content"

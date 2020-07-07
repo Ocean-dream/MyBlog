@@ -43,7 +43,7 @@ class HomeController extends Controller {
     this.ctx.body= {data: result}
   }
   /**
-   * 得到类别名称和编号
+   * 栏目类别名称和编号
    */
   async getTypeInfo () {
     const result = await this.app.mysql.select('type')

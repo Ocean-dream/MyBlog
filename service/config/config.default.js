@@ -20,13 +20,15 @@ module.exports = appInfo => {
     // database configuration
     client: {
       // host
-      host: 'localhost',  
+      host: '101.201.253.124',  
+      // host: 'localhost', 
       // port
       port: '3306',
       // username
       user: 'root',
       // password
-      password: 'root',
+      // password: '123456',
+      password: '52541',
       // database
       database: 'react_blog',    
     },
@@ -38,14 +40,15 @@ module.exports = appInfo => {
 
   // 配置egg-cors解决跨域
   config.security = {
-    scrf: {
+    csrf: {
       enable: false
     },
     domainWhiteList: ['*']
   }
   config.cors = {
-    origin: '*',
-    allowMethods: 'GET,HEAD,PUT,DELETE,PATCH,OPTIONS'
+    origin: 'http://127.0.0.1:3000',
+    credentials: true,
+    allowMethods: 'GET,HEAD,PUT,DELETE,PATCH,OPTIONS,POST'
   }
 
   // add your middleware config here

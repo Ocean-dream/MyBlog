@@ -1,0 +1,15 @@
+.login-div{
+    margin:250px auto;
+    width: 500px;
+}
+body{
+    background-image: url(./../images/bg.jpg);
+    /* background: skyblue; */
+}
+.ant-card{
+    background: transparent;
+    border: 0;
+}
+.ant-btn-primary{
+    /* background: transparent; */
+}

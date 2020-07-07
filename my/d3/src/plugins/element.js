@@ -1,0 +1,90 @@
+import Vue from 'vue'
+import {
+    Button,
+    Form,
+    FormItem,
+    Input,
+    Message,
+    Header,
+    Main,
+    Aside,
+    Container,
+    Menu,
+    Submenu,
+    MenuItem,
+    CollapseItem,
+    Breadcrumb,
+    BreadcrumbItem,
+    Table,
+    TableColumn,
+    Pagination,
+    Switch,
+    Dialog,
+    MessageBox,
+    Card,
+    Tag,
+    Row,
+    Col,
+    Tree,
+    Tooltip,
+    Select,
+    Option,
+    Cascader,
+    Alert,
+    Tabs,
+    TabPane,
+    Steps,
+    Step,
+    Checkbox,
+    CheckboxGroup,
+    Upload,
+    Radio,
+    Popover,
+    RadioGroup,
+    Collapse
+
+} from 'element-ui'
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(Collapse)
+Vue.use(Popover)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Header)
+Vue.use(Main)
+Vue.use(Aside)
+Vue.use(Container)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Pagination)
+Vue.use(Switch)
+Vue.use(Dialog)
+Vue.use(Card)
+Vue.use(Tag)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Tree)
+Vue.use(Tooltip)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(RadioGroup)
+Vue.use(Upload)
+Vue.use(Radio)
+Vue.use(CollapseItem)
+    // Vue.use(MessageBox)
+    //message需要挂载到全局上
+Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm

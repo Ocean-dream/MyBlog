@@ -1,0 +1,42 @@
+  {
+    "app": {
+      "h5": {
+        "root_url": "https://atm-h5-test.mobius.org.cn",
+        "wx": {
+          "redirect_url": "https://atm-h5-test.mobius.org.cn"
+        },
+        "ali": {
+          "redirect_url": "https://atm-h5-test.mobius.org.cn"
+        }
+      }
+    },
+    "env": {
+      "dev": {
+        "access_key_id": "xxxxxxxx",
+        "access_key_secret": "yyyyyyyy",
+        "api_server_url": "xxxxxxxxxxxxxxx"
+      },
+      "test": {
+        "access_key_id": "xxxxxxxx",
+        "access_key_secret": "yyyyyyyy",
+        "api_server_url": "https://api-atm-test.mobius.org.cn"
+      },
+      "prod": {
+        "access_key_id": "xxxxxxxx",
+        "access_key_secret": "yyyyyyyy",
+        "api_server_url": "xxxxxxxxxxxxxxxx"
+      }
+    },
+    "default": {
+      "machine_sn": "M00002019TT",
+      "environment": "test",
+      "wx_appid": "wx2954b245fd611cb0",
+      "ali_appid": "unknown"
+    },
+    "client": {
+      "allow": [
+        "wx.app",
+        "wx.dev"
+      ]
+    }
+  }
