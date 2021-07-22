@@ -24,7 +24,7 @@
     "vue-draggable-resizable": "^2.0.1",
     "vue-jsonp": "^0.1.8",
     "vue-router": "^3.0.6",
-    "xlsx": "^0.15.2"
+    "xlsx": "^0.17.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.0.0",
